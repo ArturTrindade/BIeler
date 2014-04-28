@@ -1,4 +1,4 @@
-# png('C:/Users/Artur/Documents/GitHub/BIeler/nov_hp1.png',width = 1366, height = 768, units = "px", pointsize = 23,bg ="transparent")
+png('C:/Users/Artur/Documents/GitHub/BIeler/feb_hp1.png',width = 1366, height = 768, units = "px", pointsize = 23,bg ="transparent")
 
 par(mar=c(4,4,2,4))
 
@@ -9,6 +9,8 @@ plot.xts(dados[x,1]/mean(dados[,1]), ylim=c(.25,2),main='hp1')
 for(i in 2:ncol(dados)){
   lines(dados[x,i]/mean(dados[,i]),cex=.75,col=i,lwd=1)
 }
-legend("topleft",paste("hp1.",seq(1,ncol(dados)),sep=""),col=c("black",seq(2, ncol(dados), by = 1)),ncol=ncol(dados),lwd=1)
+legend("topleft",paste("hp1.",seq(1,ncol(dados)),sep=""),
+       col=c("black",seq(2, ncol(dados), by = 1)),lwd=1,ncol=8)
 
-# dev.off()
+dev.off()
+# ,ncol=ncol(dados)

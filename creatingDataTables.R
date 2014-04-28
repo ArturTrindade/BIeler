@@ -2,7 +2,7 @@ rm(list=ls())
 require(compiler)
 require(xts)
 Sys.setenv(TZ="UTC")
-readDir<-"C:/Users/Artur/Documents/GitHub/BIeler/Dados/2013/13/5/1"
+readDir<-"C:/Users/Artur/Documents/GitHub/BIeler/Data/2/13/5/1"
 saveDir<-"C:/Users/Artur/Desktop/tabelas/"
 
 ###this function creates a table reading preselected columns from all csv files in a folder
